@@ -22,6 +22,9 @@ adhere to the following workflow:
    [Conventional Commit Specification](https://www.conventionalcommits.org/en/v1.0.0/)
    for commit messages.
 5. Make sure all the tests pass when running `pnpm test`.
+   - If you changed a docs page, bump the `lastUpdated` date in its frontmatter
+     (or run `pnpm fix:doc-dates` to set it to today). It's checked by
+     `pnpm test:doc-dates`.
 6. Submit the PR for review.
 
 After your pull request is submitted, we will review it at as soon as possible.
